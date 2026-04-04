@@ -1,0 +1,30 @@
+{
+  "name": "@socialdesk/sdk",
+  "version": "1.0.0",
+  "description": "SDK oficial de Socialdesk para Node.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "socialdesk",
+    "sdk",
+    "whatsapp",
+    "chatbot",
+    "messaging"
+  ],
+  "author": "Socialdesk",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}
