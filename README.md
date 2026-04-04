@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-ready-blue.svg)](https://www.typescriptlang.org/)
 
-SDK oficial de [Socialdesk](https://socialdesk.com) para Node.js.
+SDK oficial de [Socialdesk](https://socialdesk.cr) para Node.js.
 
 - Tipado completo en TypeScript
 - Helper para parsear webhooks
