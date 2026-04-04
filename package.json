@@ -1,5 +1,5 @@
 {
-  "name": "@socialdesk/sdk",
+  "name": "socialdesk-node",
   "version": "1.0.0",
   "description": "SDK oficial de Socialdesk para Node.js",
   "main": "dist/index.js",
@@ -14,12 +14,16 @@
   "keywords": [
     "socialdesk",
     "sdk",
+    "node",
     "whatsapp",
     "chatbot",
     "messaging"
   ],
   "author": "Socialdesk",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "axios": "^1.7.0"
   },
