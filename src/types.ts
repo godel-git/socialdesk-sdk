@@ -65,21 +65,10 @@ export interface QuickReply {
   attachments?: Attachment[];
 }
 
-export interface PromptInput {
-  name: string;
-  label: string;
-  type: string;
-  placeholder?: string;
-  defaultValue?: string;
-  options?: { label: string; value: string; checked?: boolean }[];
-  required?: boolean;
-}
-
 export interface Callback {
   id: string;
   label: string;
-  value: string | { promptInputs: PromptInput[] };
-  type?: 'CALLBACK' | 'PROMPT_CALLBACK';
+  value: string;
 }
 
 export interface DirectMessagePayload {
