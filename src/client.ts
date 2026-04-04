@@ -3,7 +3,6 @@ import {
   AddLabelOptions,
   AssignConversationOptions,
   DirectMessageOptions,
-  HintCallbackOptions,
   HintMessageOptions,
   HSMMessageOptions,
 } from './types';
@@ -13,7 +12,7 @@ export class SocialdeskClient {
 
   constructor(
     private accessToken: string,
-    baseURL: string = 'https://api.socialdesk.com',
+    baseURL: string = 'https://api.socialdesk.cr',
   ) {
     this.http = axios.create({
       baseURL,
@@ -56,21 +55,6 @@ export class SocialdeskClient {
       quick_replies: [],
       send_as_direct_message: true,
       application_context: options.application_context,
-    });
-    return data;
-  }
-
-  /**
-   * Execute a hint callback action.
-   */
-  async sendHintCallback(options: HintCallbackOptions): Promise<{ success: boolean }> {
-    const { data } = await this.http.post('/web-api/messages/reply/callback', {
-      callback_id: options.callback_id,
-      message_id: options.message_id,
-      reply_id: options.reply_id,
-      conversation_id: options.conversation_id,
-      app_instance: options.app_instance,
-      callback_value: options.callback_value,
     });
     return data;
   }

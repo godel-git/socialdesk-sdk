@@ -26,7 +26,6 @@ export {
   // API request options
   HintMessageOptions,
   DirectMessageOptions,
-  HintCallbackOptions,
   HSMMessageOptions,
   AssignConversationOptions,
   AddLabelOptions,

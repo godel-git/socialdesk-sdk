@@ -202,15 +202,6 @@ export interface DirectMessageOptions {
   application_context?: Record<string, any>;
 }
 
-export interface HintCallbackOptions {
-  callback_id: string;
-  message_id: string;
-  reply_id: string;
-  conversation_id: string;
-  app_instance: string;
-  callback_value: any;
-}
-
 export interface HSMMessageOptions {
   channel_id: string;
   account_contact_id?: string;
