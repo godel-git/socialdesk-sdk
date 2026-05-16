@@ -41,15 +41,9 @@ export class WebhookHelper {
     return this.event.instance.id;
   }
 
-  /** Get the parsed app settings (from instance.settings JSON string). */
+  /** Get the parsed app settings from event.extension_settings. */
   getSettings<T = any>(): T {
-    try {
-      return typeof this.event.instance.settings === 'string'
-        ? JSON.parse(this.event.instance.settings)
-        : (this.event.instance.settings as T) ?? ({} as T);
-    } catch {
-      return {} as T;
-    }
+    return (this.event.extension_settings ?? {}) as T;
   }
 
   /** Get the conversation ID from any event type. */

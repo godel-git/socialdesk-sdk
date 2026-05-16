@@ -175,6 +175,7 @@ export interface WebhookEvent {
     id: string;
     settings?: string;
   };
+  extension_settings?: Record<string, unknown>;
   access_token: string;
   event_id: string;
   event_time: string;

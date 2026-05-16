@@ -1,6 +1,6 @@
 {
   "name": "socialdesk-node",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "SDK oficial de Socialdesk para Node.js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
